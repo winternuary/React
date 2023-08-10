@@ -3,4 +3,8 @@ const MyComponent = (props) => {
   return <div>안녕하세요, 제 이름은 {props.name}</div>;
 };
 
+MyComponent.defaultProps = {
+  name: "이름을 정해주세용",
+};
+
 export default MyComponent;
