@@ -1,6 +1,5 @@
-const MyComponent = (props) => {
+const MyComponent = ({ name, children }) => {
   // props -> properties를 줄인 표현으로 컴포넌트 속성을 설정할 때 사용하는 요소
-  const { name, children } = props;
   return (
     <div>
       안녕하세요, 제 이름은 {name} 입니다.
