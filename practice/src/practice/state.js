@@ -19,8 +19,7 @@ class Counter extends Component {
             this.setState({ number: number + 1 });
           }}
         >
-          {" "}
-          +1{" "}
+          +1
         </button>
       </div>
     );
