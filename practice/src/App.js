@@ -3,6 +3,7 @@ import Counter from "./practice/state";
 import Say from "./practice/UseState";
 import State from "./practice/UseStatee";
 import EventPractice from "./practice/EventPractice";
+import IterationSample from "./practice/IterationSample";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Say />
       <State />
       <EventPractice />
+      <IterationSample />
     </div>
   );
 }
