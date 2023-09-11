@@ -16,10 +16,10 @@ const Say = () => {
         빨간색
       </button>
       <button style={{ color: "green" }} onClick={() => setColor("green")}>
-        빨간색
+        초록색
       </button>
       <button style={{ color: "blue" }} onClick={() => setColor("blue")}>
-        빨간색
+        파란색
       </button>
     </div>
   );
