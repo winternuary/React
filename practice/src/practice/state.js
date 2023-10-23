@@ -1,4 +1,3 @@
-//클래스형 컴포넌트의 state
 import { Component } from "react";
 
 class Counter extends Component {
