@@ -4,6 +4,7 @@ import Say from "./practice/UseState";
 import State from "./practice/UseStatee";
 import EventPractice from "./practice/EventPractice";
 import IterationSample from "./practice/IterationSample";
+import UseState from "./practice/UseStateA";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <State />
       <EventPractice />
       <IterationSample />
+      <UseState />
     </div>
   );
 }
