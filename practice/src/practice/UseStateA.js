@@ -1,11 +1,11 @@
-import {useState} from 'react';
+import { useState } from "react";
 
-const Counter = () =>  {
+const Counter = () => {
     const [value, setValue] = useState(0);
 
     return(
         <div>
-            <p>눌러라 <h1>{value}</h1></p>
+            <p>숫자는 <p>{value}</p>이다</p>
             <button onClick={()=>setValue(value+1)}>+1</button>
             <button onClick={()=>setValue(value-1)}>-1</button>
         </div>

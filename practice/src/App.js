@@ -5,6 +5,7 @@ import State from "./practice/UseStatee";
 import EventPractice from "./practice/EventPractice";
 import IterationSample from "./practice/IterationSample";
 import UseState from "./practice/UseStateA";
+import Info from "./practice/info";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <EventPractice />
       <IterationSample />
       <UseState />
+      <Info />
     </div>
   );
 }
