@@ -6,6 +6,7 @@ import EventPractice from "./practice/EventPractice";
 import IterationSample from "./practice/IterationSample";
 import UseState from "./practice/UseStateA";
 import Info from "./practice/info";
+import Average from "./practice/Average";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <IterationSample />
       <UseState />
       <Info />
+      <Average />
     </div>
   );
 }
