@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { increment, decrement, incrementByAmount } from "./store";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const count = useSelector((state) => state.counter.value); //useSelector 사용하여 count 값 가져오기
+  const dispatch = useDispatch(); //훅 사용하기
 
   return (
-    <>
+    <div>
+      <h1>Redux Toolkit Counter</h1>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <button onClick={() => dispatch(decrement())}>-</button>
+        <span>{count}</span>
+        <button onClick={() => dispatch(increment())}>+</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div>
+        <button onClick={() => dispatch(incrementByAmount(5))}>
+          Increment by 5
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
-
-export default App
